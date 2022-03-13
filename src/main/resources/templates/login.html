@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="/index">Home</a>
+
+<form class="align-middle" th:action="@{/add-user}" method="POST" th:object="${user}">
+    <div class="input-group-prepend">
+        <input th:value="${name}" name="name" class="form-control" type="text" placeholder="name"
+               aria-describedby="inputGroup-sizing-sm"><br>
+        <input th:value="${surname}" name="surname" class="form-control" type="text" placeholder="surname"
+               aria-describedby="inputGroup-sizing-sm"><br>
+        <input th:value="${email}" name="email" class="form-control" type="text" placeholder="email"
+               aria-describedby="inputGroup-sizing-sm"><br>
+        <input th:value="${password}" name="password" class="form-control" type="password" placeholder="password"
+               aria-describedby="inputGroup-sizing-sm"><br>
+        <button class="btn btn-secondary btn-sm" type="submit">Submit</button>
+    </div>
+</form>
+
+
+</body>
+</html>
