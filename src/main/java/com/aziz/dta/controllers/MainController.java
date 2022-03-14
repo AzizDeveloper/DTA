@@ -26,7 +26,7 @@ public class MainController {
 
     @GetMapping
     public String login() {
-        return "login";
+        return "login2";
     }
 
     @PostMapping
